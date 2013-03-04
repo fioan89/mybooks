@@ -1,0 +1,93 @@
+#carousel {
+	width: 80%;
+	height: 190px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#slides {
+	overflow: hidden;
+	/* fix ie overflow issue */
+	position: relative;
+	height: 150px;
+	border: 1px solid #ccc;
+}
+
+/* remove the list styles, width : item width * total items */
+#slides ul {
+	position: relative;
+	margin: 0;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 0;
+	list-style: none;
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+
+#slides li img {
+	padding: 5px;
+	width: 140px;
+	height: 140px;
+	cursor: pointer;
+}
+#slides li img:hover {
+	border: 1px solid #FF9933;	
+}
+
+#slides li img:active {
+	border: 2px solid #FF9955;
+}
+/* Styling for prev and next buttons */
+#car-navigation {
+	padding: 0 0 5px 0;
+}
+
+#car-navigation span {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: #4E443C;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 0 1px #000;
+	font: 16px/29px Arial, sans-serif;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 0 0 2px #999;
+	-moz-box-shadow: 0 0 2px #999;
+	box-shadow: 0 0 2px #999;
+}
+
+#prev {
+	left: -35px;
+	top: 70px;
+	text-indent: 8px;
+	
+}
+
+#prev:hover {
+	border: 1px solid #FF9933;
+}
+
+#next {
+	right: -35px;
+	top: 70px;
+	text-indent: 8px;
+}
+
+#next:hover {
+	border: 1px solid #FF9933;
+}
+
+.clear_car {
+	clear: both
+}
